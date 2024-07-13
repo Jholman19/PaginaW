@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <h1>Habilidad de resolución de problemas </h1>
+        </header>
+        <main>
+            <div id="inicio" class="visible">
+                <h2>Ingresa tus datos para comenzar:</h2>
+                <form id="inicio-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" required>
+                    <br><br>
+                    <button type="submit">Comenzar Evalucion</button>
+                </form>
+            </div>
+
+            <div id="encuesta" class="hidden">
+                <h2>Evaluación semana 1</h2>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Trabajas como asistente administrativo en la oficina de gestión del centro de acopio. Un día, recibes una llamada telefónica de un proveedor importante que expresa su insatisfacción con el servicio recibido durante la última entrega
+                            de productos. El proveedor está frustrado y exige una explicación inmediata sobre lo sucedido. ¿Cómo actuarias ante esta situación?</h4>
+                        <label><input type="radio" name="pregunta1" value="Escuchas atentamente al proveedor, mostrando empatía por su preocupación y prometiendo investigar la situación para encontrar una solución">Escuchas atentamente al proveedor, mostrando empatía por su preocupación y prometiendo investigar la situación para encontrar una solución</label>
+                        <label><input type="radio" name="pregunta1" value="Cortas la llamada abruptamente y decides no tomar medidas hasta que el proveedor se calme">Cortas la llamada abruptamente y decides no tomar medidas hasta que el proveedor se calme</label>
+                        <label><input type="radio" name="pregunta1" value="Le das al proveedor una serie de instrucciones sin escuchar sus preocupaciones, para intentar resolver el problema">Le das al proveedor una serie de instrucciones sin escuchar sus preocupaciones, para intentar resolver el problema</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Falso/verdadero:</legend>
+                        <H4>Es aceptable ignorar las preocupaciones de los demás trabajadores del centro de acopio, si no afectan directamente tu trabajo</H4>
+                        <label><input type="radio" name="pregunta2" value="Falso: En un ambiente laboral colaborativo como un centro de acopio, es importante mostrar empatía y escuchar las preocupaciones de todos los colegas para mantener un equipo cohesionado y eficiente">Falso: En un ambiente laboral colaborativo como un centro de acopio, es importante mostrar empatía y escuchar las preocupaciones de todos los colegas para mantener un equipo cohesionado y eficiente</label>
+                        <label><input type="radio" name="pregunta2" value="Verdadero: En un ambiente laboral colaborativo como un centro de acopio, no es importante mostrar empatía y escuchar las preocupaciones de todos los colegas para mantener un equipo cohesionado y eficiente">Verdadero: En un ambiente laboral colaborativo como un centro de acopio, no es importante mostrar empatía y escuchar las preocupaciones de todos los colegas para mantener un equipo cohesionado y eficiente</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Tienes un puesto de ventas en el centro de acopio. Uno de tus empleados, que es responsable de la atención al cliente y el empaquetado de los productos, ha estado cometiendo errores frecuentes en los pedidos de los clientes. Esto
+                            ha llevado a varias quejas de los clientes sobre pedidos incorrectos y productos mal empaquetados. ¿Cómo respondes ante esta situación?</h4>
+
+                        <label><input type="radio" name="pregunta3" value="Le llamas la atención al empleado frente a los clientes para que se dé cuenta de la gravedad de la situación">Le llamas la atención al empleado frente a los clientes para que se dé cuenta de la gravedad de la situación</label>
+                        <label><input type="radio" name="pregunta3" value="Decides no intervenir y esperar a que el problema se resuelva por sí solo con el tiempo">Decides no intervenir y esperar a que el problema se resuelva por sí solo con el tiempo</label>
+                        <label><input type="radio" name="pregunta3" value="Te acercas al empleado en privado, muestras empatía por las dificultades que pueda estar enfrentando, y le ofreces orientación y apoyo para mejorar su desempeño">Te acercas al empleado en privado, muestras empatía por las dificultades que pueda estar enfrentando, y le ofreces orientación y apoyo para mejorar su desempeño</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Falso/verdadero :</legend>
+                        <h4>Resolver conflictos entre vendedores en una plaza de mercado puede lograrse eficazmente mediante el uso de la comunicación asertiva y la empatía</h4>
+                        <label><input type="radio" name="pregunta4" value="Falso: La comunicación asertiva y la empatía no son herramientas clave para manejar conflictos de manera efectiva, promoviendo un ambiente de trabajo armonioso y productivo en la plaza de mercado">Falso: La comunicación asertiva y la empatía no son herramientas clave para manejar conflictos de manera efectiva, promoviendo un ambiente de trabajo armonioso y productivo en la plaza de mercado</label>
+                        <label><input type="radio" name="pregunta4" value="Verdadero: La comunicación asertiva y la empatía son herramientas clave para manejar conflictos de manera efectiva, promoviendo un ambiente de trabajo armonioso y productivo en la plaza de mercado">Verdadero: La comunicación asertiva y la empatía son herramientas clave para manejar conflictos de manera efectiva, promoviendo un ambiente de trabajo armonioso y productivo en la plaza de mercado</label>
+
+                    </fieldset>
+
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="hidden">
+                    <h1>Resultado</h1>
+                    <p id="resultado-texto">
+
+                    </p>
+                    <canvas id="chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/eva1.3.js"></script>
+    </body>
+
+</html>

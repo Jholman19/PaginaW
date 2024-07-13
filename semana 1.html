@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <h1>Habilidad de resolución de problemas </h1>
+        </header>
+        <main>
+            <div id="inicio" class="visible">
+                <h2>Ingresa tus datos para comenzar:</h2>
+                <form id="inicio-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" required>
+                    <br><br>
+                    <button type="submit">Comenzar Evalucion</button>
+                </form>
+            </div>
+
+            <div id="encuesta" class="hidden">
+                <h2>Evaluación semana 1</h2>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4> Un vendedor de abastos del centro de acopio recibe una carga de cebolla, pero se queja con su proveedor sobre el producto agrícola, debido a que no cumple con las expectativas de calidad que habitualmente reciben. Como proveedor
+                            de productos agrícolas, ¿Cómo deberías manejar la situación?</h4>
+                        <label><input type="radio" name="pregunta1" value="Escuchar atentamente las preocupaciones del cliente, disculparse por la experiencia negativa y ofrecer un reembolso o un reemplazo del producto"> Escuchar atentamente las preocupaciones del cliente, disculparse por la experiencia negativa y ofrecer un reembolso o un reemplazo del producto</label>
+                        <label><input type="radio" name="pregunta1" value=" Ignorar las quejas del cliente y seguir con la actividad que está realizando">  Ignorar las quejas del cliente y seguir con la actividad que está realizando</label>
+                        <label><input type="radio" name="pregunta1" value="Defender la calidad del producto y argumentar con el cliente sobre su queja"> Defender la calidad del producto y argumentar con el cliente sobre su queja</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Adivinanza:</legend>
+                        <H4> Son redonditas dulce como la miel, nos pisan, nos pisan y luego a beber</H4>
+                        <label><input type="radio" name="pregunta2" value="Cereza">Cereza </label>
+                        <label><input type="radio" name="pregunta2" value="Uva"> Uva</label>
+                        <label><input type="radio" name="pregunta2" value="Naranja">Naranja</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Descubre la frase oculta:</legend>
+                        <h4>Con la letra inicial de cada imagen encuentra la frase oculta</h4>
+                        <img src="IMG/adivina 1.jpeg">
+                        <label><input type="radio" name="pregunta3" value="El corazón se nutre de pensamientos y en palabras como en acciones">El corazón se nutre de pensamientos y en palabras como en acciones</label>
+                        <label><input type="radio" name="pregunta3" value="En corazón se fortalece con palabras y acciones auténticas">En corazón se fortalece con palabras y acciones auténticas    </label>
+                        <label><input type="radio" name="pregunta3" value="corazón se nutre de palabras y actos sinceros">El corazón se nutre de palabras y actos sinceros</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Eres un vendedor de frutas y verduras en el centro de acopio. Recientemente has notado que la organización de los productos agrícolas no es óptima, observando que algunos clientes se quejan de la dificultad para encontrar rápidamente
+                            el producto que necesitan, por tanto, realizan la compra en otro puesto de ventas. ¿Cómo solucionarías este problema?</h4>
+                        <label><input type="radio" name="pregunta4" value="Realizar una encuesta entre los clientes obteniendo opiniones directas sobre cómo organizar mejor los productos">Realizar una encuesta entre los clientes obteniendo opiniones directas sobre cómo organizar mejor los productos</label>
+                        <label><input type="radio" name="pregunta4" value="Observar el flujo de clientes y ajustar progresivamente, modificando la disposición de los productos agrícolas según la forma en que los clientes navegan por el puesto">observar el flujo de clientes y ajustar progresivamente, modificando la disposición de los productos agrícolas según la forma en que los clientes navegan por el puesto</label>
+                        <label><input type="radio" name="pregunta4" value="Contratar a un consultor en diseño de espacios obteniendo una ayuda profesional para optimizar la disposición y organización del puesto">Contratar a un consultor en diseño de espacios obteniendo una ayuda profesional para optimizar la disposición y organización del puesto</label>
+                    </fieldset>
+
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="hidden">
+                    <h1>Resultado</h1>
+                    <p id="resultado-texto">
+
+                    </p>
+                    <canvas id="chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/eva.js"></script>
+    </body>
+
+</html>

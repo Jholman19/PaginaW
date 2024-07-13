@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/semana.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Enlaza tu hoja de estilos externa -->
+    <style>
+        /* Estilo para el contenedor principal */
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            /* Apila los elementos verticalmente */
+            align-items: center;
+            /* Centra los elementos horizontalmente */
+            text-align: center;
+            /* Centra el texto dentro de cada menú */
+        }
+        /* Estilo para los menús */
+        
+        .menu {
+            width: 100%;
+            max-width: 600px;
+            /* Ancho máximo para evitar que los menús se extiendan demasiado */
+            margin-bottom: 20px;
+            /* Espacio entre cada menú */
+        }
+        /* Estilo específico para el primer menú */
+        
+        .menu:first-child {
+            margin-bottom: 40px;
+            /* Espacio adicional después del primer menú */
+        }
+        /* Media query para ajustar el diseño en pantallas más grandes */
+        
+        @media (min-width: 768px) {
+            .wrapper {
+                flex-direction: row;
+                /* Vuelve a la dirección por defecto para mostrar los menús en línea */
+                justify-content: center;
+                /* Centra los menús horizontalmente */
+                flex-wrap: wrap;
+                /* Permite que los menús se envuelvan en varias líneas */
+            }
+            .menu {
+                flex-basis: calc(33.33% - 20px);
+                /* Tamaño de cada menú en pantallas grandes */
+                margin-right: 20px;
+                /* Espacio entre cada menú */
+            }
+            .menu:last-child {
+                margin-right: 0;
+                /* Elimina el margen derecho del último menú para evitar desbordamiento */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Menú arriba y centrado -->
+        <nav class="menu">
+            <h2>Evaluación de habilidad de resolución de problemas</h2>
+            <ul>
+                <li><a href="semana 1.html">Semana 1</a></li>
+                <li><a href="semana 2.html">Semana 2</a></li>
+                <li><a href="semana 3.html">Semana 3</a></li>
+                <li><a href="semana 4.html">Semana 4</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menús abajo -->
+        <nav class="menu">
+            <h2>Actividad de habilidad de resolución de problemas 1</h2>
+            <ul>
+                <iframe allow="fullscreen; autoplay;" allowfullscreen width="370" height="240" frameborder="0" src="https://es.educaplay.com/juego/19673198-sopa_de_letras_de_frutas.html"></iframe>
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <h2>Actividad de habilidad de resolución de problemas 2</h2>
+            <ul>
+                <iframe style="max-width:100%" src="https://wordwall.net/embed/2df4e9d90cc94a22829baa2af1303823?themeId=2&templateId=38&fontStackId=0" width="370" height="240" frameborder="0" allowfullscreen></iframe>
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <h2>Actividad de habilidad de resolución de problemas 3</h2>
+            <ul>
+                <iframe style="max-width:100%" src="https://wordwall.net/embed/89392480c1af46678bcc315fad535b9b?themeId=46&templateId=48&fontStackId=0" width="370" height="240" frameborder="0" allowfullscreen></iframe>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

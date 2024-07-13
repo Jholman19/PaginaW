@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Habilidad de resolución de problemas </h1>
+    </header>
+    <main>
+        <div id="inicio" class="visible">
+            <h2>Ingresa tus datos para comenzar:</h2>
+            <form id="inicio-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+                <br><br>
+                <button type="submit">Comenzar Encuesta</button>
+            </form>
+        </div>
+
+        <div id="encuesta" class="hidden">
+            <h2>Cuestionario</h2>
+            <form id="quiz-form">
+                <fieldset>
+                    <legend>Situación laboral:</legend>
+                    <h4> El horario de trabajo de un empleado se ve interrumpido debido a una entrega de productos inesperada que requiere su atención inmediata. ¿Qué debería hacer el empleado?</h4>
+                    <label><input type="radio" name="pregunta1" value="Adaptarse rápidamente a la situación, posponer las tareas no urgentes y abordar la entrega de productos de manera eficiente"> Adaptarse rápidamente a la situación, posponer las tareas no urgentes y abordar la entrega de productos de manera eficiente</label>
+                    <label><input type="radio" name="pregunta1" value="Ignorar la entrega de productos y continuar con las tareas programadas">  Ignorar la entrega de productos y continuar con las tareas programadas</label>
+                    <label><input type="radio" name="pregunta1" value="Dejar la entrega de productos para más tarde y continuar con las tareas actuales"> Dejar la entrega de productos para más tarde y continuar con las tareas actuales</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adivinanza:</legend>
+                    <H4>Blanca por dentro, verde por fuera. Si si quieres te lo digo espera</H4>
+                    <label><input type="radio" name="pregunta2" value="Manzana">Manzana </label>
+                    <label><input type="radio" name="pregunta2" value="Guanabana"> Guanabana</label>
+                    <label><input type="radio" name="pregunta2" value="Pera">Pera</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descubre la frase oculta:</legend>
+                    <h4>Con la letra inicial de cada imagen encuentra la frase oculta</h4>
+                    <img src="img/adivinar 2.jpeg">
+                    <label><input type="radio" name="pregunta3" value="Lo eres lo que puedes lograr, eres lo que quieras ser">Lo eres lo que puedes lograr, eres lo que quieras ser</label>
+                    <label><input type="radio" name="pregunta3" value="No eres lo que logras, eres lo que superas">No eres lo que logras, eres lo que superas</label>
+                    <label><input type="radio" name="pregunta3" value="No defines tu valía por lo que logras, sino por lo que superas">No defines tu valía por lo que logras, sino por lo que superas</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Situación laboral:</legend>
+                    <h4>Eres el administrador de un centro de acopio que últimamente ha recibido comentarios de la población del municipio acerca del mantenimiento de la limpieza y la organización de los puestos de venta</h4>
+                    <label><input type="radio" name="pregunta4" value="Decides no modificar los procedimientos actuales, asumiendo que mantener la limpieza y la organización es responsabilidad de los vendedores y no del área administrativa del centro de acopio">Decides no modificar los procedimientos actuales, asumiendo que mantener la limpieza y la organización es responsabilidad de los vendedores y no del área administrativa del centro de acopio</label>
+                    <label><input type="radio" name="pregunta4" value="Consideras implementar un programa de limpieza más estructurado, asignar horarios específicos para la limpieza profunda del centro de acopio, o proporcionar incentivos para que los vendedores mantengan sus espacios ordenados">Consideras implementar un programa de limpieza más estructurado, asignar horarios específicos para la limpieza profunda del centro de acopio, o proporcionar incentivos para que los vendedores mantengan sus espacios ordenados</label>
+                    <label><input type="radio" name="pregunta4" value="Optas por posponer la evaluación de los métodos de trabajo y simplemente continuar con las operaciones habituales, sin analizar activamente cómo podrías mejorar la limpieza y la organización general del espacio de la plaza de mercado">Optas por posponer la evaluación de los métodos de trabajo y simplemente continuar con las operaciones habituales, sin analizar activamente cómo podrías mejorar la limpieza y la organización general del espacio de la plaza de mercado</label>
+                </fieldset>
+
+                <button type="submit">Enviar Respuestas</button>
+            </form>
+
+            <div id="resultado" class="hidden">
+                <h2>Resultado</h2>
+                <p id="resultado-texto"></p>
+                <canvas id="chart" width="200" height="200"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/eva2.js"></script>
+</body>
+
+</html>

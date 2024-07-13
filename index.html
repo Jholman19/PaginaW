@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <style>
+        .portada {
+            background-image: url('img/portada.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .titulo-principal {
+            font-size: 48px;
+            font-family: 'Lilita One', sans-serif;
+            text-align: center;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .titulo {
+            font-size: 64px;
+            font-family: 'Anton', sans-serif;
+            color: #0d91e9;
+            text-align: center;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .circulo {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: orange;
+            margin-right: 10px;
+        }
+        
+        header {
+            background-color: #0d91e9;
+            padding: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .textos-header {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .contenedor {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .contenedor-sobre-nosotros img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .contenido-textos h3 {
+            font-family: 'Anton', sans-serif;
+        }
+        
+        .galeria-port {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .imagen-port {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .imagen-port img {
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+        
+        .imagen-port:hover img {
+            transform: scale(1.1);
+        }
+        
+        .hover-galeria {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .imagen-port:hover .hover-galeria {
+            opacity: 1;
+        }
+        
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        footer {
+            background-color: #0d91e9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .content-foo {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="actividad recreativa.html">Actividad Recreativa</a>
+        </ul>
+        <section class="textos-header">
+            <h2 class="titulo">BIENVENIDOS AL TRIAGE DE HABILIDADES: CERRANDO BRECHAS LABORALES</h2>
+        </section>
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(246, 238, 158);"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h3>Este es un espacio interactivo que le permitirá evaluar y potenciar las habilidades de resolución de problemas, habilidades de comunicación y los procesos mentales superiores. Para iniciar, sigue los siguientes pasos:</h3>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/lgo.jpeg" alt="image" class="imagen-about_us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Primer paso</h3>
+                    <p>Haz clic en la habilidad que deseas evaluar.</p>
+                    <h3><span>2</span>Segundo paso</h3>
+                    <p>Responde a la situación laboral o actividad, seleccionando la respuesta que creas correcta.</p>
+                    <h3><span>3</span>Tercer paso</h3>
+                    <p>Observar el resultado el cual está determinado por colores. Siendo los siguientes:</p>
+                    <span class="circulo"></span>Competencia no alcanzada<br>
+                    <span class="circulo" style="background-color: yellow;"></span>Competencia mayormente alcanzada<br>
+                    <span class="circulo" style="background-color: blue;"></span>Competencia alcanzada
+                    <h3><span>4</span>Cuarto paso</h3>
+                    <p>Desarrollar las actividades interactivas para potencializar la habilidad seleccionada.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">EVALUCIÓN DE HABILIDADES</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/habilidades resolucion.jpg" alt="">
+                        <a href="Habilidad de resolución de problemas.html">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Habilidad de resolución de problemas</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="img/habilidades comunicación.jpg" alt="">
+                        <a href="Habilidades de comunicacion.html">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Habilidades de comunicación</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="img/proceso  mental.jpg" alt="">
+                        <a href="proceso mentales superiores.html">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Proceso mentales superiores</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="slideshow-row">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/campe1.png" style="width: 80%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/campe2.png" style="width: 80%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/campe3.png" style="width: 80%;">
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/campe4.png" style="width: 80%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/CAP.png" style="width: 80%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/campe6.png" style="width: 80%;">
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/campe6.png" style="width: 80%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/campe8.png" style="width: 80%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/CAP.png" style="width: 80%;">
+                </div>
+            </div>
+        </div>
+
+        <section class="servicios">
+            <div class="contenedor">
+                <!-- Contenido de servicios aquí -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="content-foo">
+                <h4>Información de Contacto</h4>
+                <p>Teléfono: +123456789<br>Email: info@tudominio.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Redes Sociales</h4>
+                <p>Síguenos en nuestras redes sociales para más novedades</p>
+            </div>
+        </div>
+        <p class="titulo-final">Todos los derechos reservados &copy; 2024</p>
+    </footer>
+    <script src="js/inicio.js"></script>
+</body>
+
+</html>

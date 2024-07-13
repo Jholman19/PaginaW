@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <body>
+        <header>
+            <h1>Habilidad de resolución de problemas </h1>
+        </header>
+        <main>
+            <div id="inicio" class="visible">
+                <h2>Ingresa tus datos para comenzar:</h2>
+                <form id="inicio-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" required>
+                    <br><br>
+                    <button type="submit">Comenzar Encuesta</button>
+                </form>
+            </div>
+
+            <div id="encuesta" class="hidden">
+                <h2>Cuestionario</h2>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Eres un vendedor de abastos del centro de acopio del municipio de Pamplona, que ha experimentado dificultades para vender suficiente producto en las últimas semanas, afectando los ingresos y la rentabilidad de tu negocio. ¿Cómo
+                            actuarias ante esta situación?</h4>
+                        <label><input type="radio" name="pregunta1" value="Decides mantener el mismo horario de atención en tu puesto de venta, sin considerar ajustes que puedan atraer a más clientes">Decides mantener el mismo horario de atención en tu puesto de venta, sin considerar ajustes que puedan atraer a más clientes</label>
+                        <label><input type="radio" name="pregunta1" value="Decides ampliar la gama de productos que ofreces en tu puesto, incluyendo nuevos tipos de frutas y verduras que podrían atraer a una clientela más diversa">Decides ampliar la gama de productos que ofreces en tu puesto, incluyendo nuevos tipos de frutas y verduras que podrían atraer a una clientela más diversa</label>
+                        <label><input type="radio" name="pregunta1" value="Decides implementar descuentos especiales o promociones por volumen de compra para atraer a más clientes y fomentar ventas adicionales"> Decides implementar descuentos especiales o promociones por volumen de compra para atraer a más clientes y fomentar ventas adicionales</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Adivinanza:</legend>
+                        <H4>Blanco fue mi nacimiento, verde mi niñez roja mi madurez y negra mi vejez</H4>
+                        <label><input type="radio" name="pregunta2" value="Banano">Banano</label>
+                        <label><input type="radio" name="pregunta2" value="Mora">Mora</label>
+                        <label><input type="radio" name="pregunta2" value="Pera">Pera</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Descubre la frase oculta:</legend>
+                        <h4>Con la letra inicial de cada imagen encuentra la frase oculta</h4>
+                        <img src="IMG/adivina 4.jpeg">
+                        <label><input type="radio" name="pregunta3" value="Un abrazo rompe las mentiras">Un abrazo rompe las mentiras</label>
+                        <label><input type="radio" name="pregunta3" value="unas freas, el raton y la tortuga generan miedo ">unas freas, el raton y la tortuga generan miedo </label>
+                        <label><input type="radio" name="pregunta3" value="Un fuerte abrazo rompe los miedos">Un fuerte abrazo rompe los miedos</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Eres el administrador de un centro de acopio, que enfrenta problemas recurrentes de desperdicio de productos agrícolas por parte de los vendedores de abastos. ¿Cómo solucionarías esta situación?</h4>
+                        <label><input type="radio" name="pregunta4" value="Decides implementar un programa que incluya la separación de residuos orgánicos para compostaje, la donación de alimentos no vendidos a organizaciones benéficas locales y la concienciación entre los vendedores sobre prácticas de manejo de alimentos">Decides implementar un programa que incluya la separación de residuos orgánicos para compostaje, la donación de alimentos no vendidos a organizaciones benéficas locales y la concienciación entre los vendedores sobre prácticas de manejo de alimentos</label>
+                        <label><input type="radio" name="pregunta4" value="Decides organizar talleres regulares donde los vendedores aprendan sobre técnicas de almacenamiento adecuado, rotación de inventario y métodos para reducir el desperdicio de alimentos">Decides organizar talleres regulares donde los vendedores aprendan sobre técnicas de almacenamiento adecuado, rotación de inventario y métodos para reducir el desperdicio de alimentos</label>
+                        <label><input type="radio" name="pregunta4" value="Decides implementar políticas claras que incluyan penalizaciones económicas o restricciones de acceso al mercado para los vendedores que no cumplan con los estándares establecidos para la reducción del desperdicio de alimentos">Decides implementar políticas claras que incluyan penalizaciones económicas o restricciones de acceso al mercado para los vendedores que no cumplan con los estándares establecidos para la reducción del desperdicio de alimentos</label>
+                    </fieldset>
+
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="hidden">
+                    <h2>Resultado</h2>
+                    <p id="resultado-texto"></p>
+                    <canvas id="chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/eva4.js"></script>
+    </body>
+
+</html>

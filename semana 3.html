@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Habilidad de resolución de problemas </h1>
+    </header>
+    <main>
+        <div id="inicio" class="visible">
+            <h2>Ingresa tus datos para comenzar:</h2>
+            <form id="inicio-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+                <br><br>
+                <button type="submit">Comenzar Encuesta</button>
+            </form>
+        </div>
+
+        <div id="encuesta" class="hidden">
+            <h2>Cuestionario</h2>
+            <form id="quiz-form">
+                <fieldset>
+                    <legend>Situación laboral:</legend>
+                    <h4> Como trabajador del centro de acopio, notas que últimamente te resulta difícil completar las tareas a tiempo, como las entregas de pedidos, las descargas de productos y la organización del lugar de ventas. Al finalizar el día, decides
+                        tomarte un momento para reflexionar sobre tus métodos de trabajo y considerar si existen formas más eficientes de abordar todas las tareas diarias</h4>
+                    <label><input type="radio" name="pregunta1" value="Continuar con los mismos métodos de trabajo sin hacer cambios"> Continuar con los mismos métodos de trabajo sin hacer cambios</label>
+                    <label><input type="radio" name="pregunta1" value="Dejar las tareas para el día siguiente sin hacer una evaluación de su desempeño"> Dejar las tareas para el día siguiente sin hacer una evaluación de su desempeño</label>
+                    <label><input type="radio" name="pregunta1" value="Reflexionar sobre las estrategias de trabajo y considerar posibles mejoras">Reflexionar sobre las estrategias de trabajo y considerar posibles mejoras</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adivinanza:</legend>
+                    <H4> Tiene escamas pero no es un pez, tiene corona pero no es un rey ¿Qué es?</H4>
+                    <label><input type="radio" name="pregunta2" value="Piña">Piña</label>
+                    <label><input type="radio" name="pregunta2" value="Fresa">Fresa</label>
+                    <label><input type="radio" name="pregunta2" value="Palma">Palma</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descubre la frase oculta:</legend>
+                    <h4>Con la letra inicial de cada imagen encuentra la frase oculta</h4>
+                    <img src="IMG/adivina 3.jpeg">
+                    <label><input type="radio" name="pregunta3" value=" si tomar refrescos en horas de calor es refrescante"> si tomar refrescos en horas de calor es refrescante</label>
+                    <label><input type="radio" name="pregunta3" value="si tomas fondo úsalo para emprender">si tomas fondo úsalo para emprender</label>
+                    <label><input type="radio" name="pregunta3" value="Si tocas fondo úsalo para impulsarte">Si tocas fondo úsalo para impulsarte</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Situación laboral:</legend>
+                    <h4>Como administrador de un centro de acopio, he notado recientemente problemas con la organización del espacio de los vendedores y la gestión del tráfico de los clientes. Presentándose quejas por partes de los trabajadores respecto a
+                        las dificultades para realizar la carga y descarga de productos. Además, los residentes del municipio que visitan el centro de acopio para realizar sus compras han comentado que es complicado desplazarse por el lugar debido a que
+                        el espacio es estrecho. ¿Cómo solucionarías esta situación?</h4>
+                    <label><input type="radio" name="pregunta4" value="Mantener los procedimientos actuales, asumiendo que los problemas son parte del funcionamiento normal">Mantener los procedimientos actuales, asumiendo que los problemas son parte del funcionamiento normal</label>
+                    <label><input type="radio" name="pregunta4" value="Revisar la organización del espacio y considerar mejoras como reorganizar los puestos de venta o implementar señalizaciones claras">Revisar la organización del espacio y considerar mejoras como reorganizar los puestos de venta o implementar señalizaciones claras</label>
+                    <label><input type="radio" name="pregunta4" value="Posponer la evaluación y continuar con las operaciones habituales sin revisar activamente posibles mejoras">Posponer la evaluación y continuar con las operaciones habituales sin revisar activamente posibles mejoras</label>
+                </fieldset>
+
+                <button type="submit">Enviar Respuestas</button>
+            </form>
+
+            <div id="resultado" class="hidden">
+                <h2>Resultado</h2>
+                <p id="resultado-texto"></p>
+                <canvas id="chart" width="200" height="200"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/eva3.js"></script>
+</body>
+
+</html>

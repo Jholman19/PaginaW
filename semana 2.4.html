@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <h1>Habilidad de resolución de problemas </h1>
+        </header>
+        <main>
+            <div id="inicio" class="visible">
+                <h2>Ingresa tus datos para comenzar:</h2>
+                <form id="inicio-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" required>
+                    <br><br>
+                    <button type="submit">Comenzar Evalucion</button>
+                </form>
+            </div>
+
+            <div id="encuesta" class="hidden">
+                <h2>Evaluación semana 1</h2>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Falso/verdadero:</legend>
+                        <h4>Resolver conflictos entre vendedores en una plaza de mercado puede lograrse eficazmente mediante el uso de la comunicación asertiva y la empatía</h4>
+                        <label><input type="radio" name="pregunta1" value="Verdadero: La comunicación asertiva y la empatía son herramientas clave para manejar conflictos de manera efectiva, promoviendo un ambiente de trabajo armonioso y productivo en la plaza de mercado">Verdadero: La comunicación asertiva y la empatía son herramientas clave para manejar conflictos de manera efectiva, promoviendo un ambiente de trabajo armonioso y productivo en la plaza de mercado</label>
+                        <label><input type="radio" name="pregunta1" value="Falso: En la plaza de mercado, la comunicación asertiva y la empatía no son herramientas clave para manejar conflictos de manera efectiva ni para promover un ambiente de trabajo armonioso y productivo"> Falso: En la plaza de mercado, la comunicación asertiva y la empatía no son herramientas clave para manejar conflictos de manera efectiva ni para promover un ambiente de trabajo armonioso y productivo</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación labora:</legend>
+                        <H4>Trabajas como encargado de un puesto de frutas y verduras en el centro de acopio. Durante una mañana ocupada, un cliente se acerca a ti buscando información sobre la frescura y procedencia de los productos que vendes. El cliente
+                            expresa preocupaciones sobre la calidad y desea saber más sobre las prácticas agrícolas utilizadas para cultivar las frutas y verduras</H4>
+                        <label><input type="radio" name="pregunta2" value="Respondes al cliente de manera breve, asegurándole que todos los productos son frescos y de alta calidad, sin proporcionar más detalles">Respondes al cliente de manera breve, asegurándole que todos los productos son frescos y de alta calidad, sin proporcionar más detalles </label>
+                        <label><input type="radio" name="pregunta2" value="Explicas al cliente los proveedores locales de los cuales obtienes los productos y destacas la importancia de la agricultura sostenible en la producción">Explicas al cliente los proveedores locales de los cuales obtienes los productos y destacas la importancia de la agricultura sostenible en la producción</label>
+                        <label><input type="radio" name="pregunta2" value="Le sugieres al cliente que busque información en internet sobre las prácticas agrícolas utilizadas en la región">Le sugieres al cliente que busque información en internet sobre las prácticas agrícolas utilizadas en la región</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Falso/verdadero :</legend>
+                        <h4>En el centro de acopio, es más importante hablar que escuchar para persuadir a los clientes de realizar compras</h4>
+
+                        <label><input type="radio" name="pregunta3" value="Falso: Escuchar activamente a los clientes es esencial para entender sus necesidades y preferencias, lo cual es fundamental para ofrecer un servicio personalizado y efectivo">Falso: Escuchar activamente a los clientes es esencial para entender sus necesidades y preferencias, lo cual es fundamental para ofrecer un servicio personalizado y efectivo</label>
+                        <label><input type="radio" name="pregunta3" value="Verdadero: Escuchar activamente a los clientes no es esencial para entender sus necesidades y preferencias, lo cual no es fundamental para ofrecer un servicio personalizado y efectivo">Verdadero: Escuchar activamente a los clientes no es esencial para entender sus necesidades y preferencias, lo cual no es fundamental para ofrecer un servicio personalizado y efectivo</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Trabajas en el restaurante del centro de acopio. Durante una mañana ocupada, una cliente habitual se acerca a ti y expresa su descontento porque el jugo que ha comprado tiene un sabor diferente al habitual. La cliente está preocupada
+                            por la calidad del producto y espera una respuesta satisfactoria</h4>
+                        <label><input type="radio" name="pregunta4" value="Explicas rápidamente a la cliente que los ingredientes son los mismos de siempre y que no puede ser posible que el sabor sea diferente">Explicas rápidamente a la cliente que los ingredientes son los mismos de siempre y que no puede ser posible que el sabor sea diferente</label>
+                        <label><input type="radio" name="pregunta4" value="Escuchas atentamente a la cliente, muestras empatía por su preocupación y le preguntas más detalles sobre el problema para entender mejor la situación">Escuchas atentamente a la cliente, muestras empatía por su preocupación y le preguntas más detalles sobre el problema para entender mejor la situación</label>
+                        <label><input type="radio" name="pregunta4" value="Ignoras la queja de la cliente y procedes a atender al siguiente cliente en la fila">Ignoras la queja de la cliente y procedes a atender al siguiente cliente en la fila</label>
+                    </fieldset>
+
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="hidden">
+                    <h1>Resultado</h1>
+                    <p id="resultado-texto">
+
+                    </p>
+                    <canvas id="chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/eva1.4.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>TRIVIA DE LA PLAZA</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="puntaje">
+                <img src="img/puntos.png" alt="">
+                <span class="puntos" id="puntos">0</span>
+            </div>
+            <h1>QUIZ</h1>
+            <div class="jugador">
+                <span class="nombre" id="nombre">Martín</span>
+                <img src="img/user.png" alt="">
+            </div>
+        </header>
+
+        <main class="juego">
+            <div class="contador-pregunta">
+                <span id="num-pregunta" class="num-pregunta">01</span> /
+                <span> 5</span>
+            </div>
+            <p id="txt-pregunta" class="pregunta">
+                ¿Texto de la pregunta 1?
+            </p>
+
+            <div class="opciones" id="opciones">
+                <button class="opcion" id="a">Opcion A</button>
+                <button class="opcion" id="b">Opcion B</button>
+                <button class="opcion" id="c">Opcion C</button>
+                <button class="opcion" id="d">OPCION D</button>
+            </div>
+
+            <button class="btn" id="siguiente">Siguiente</button>
+
+        </main>
+    </div>
+
+    <script src="js/juegos.js"></script>
+</body>
+
+</html>

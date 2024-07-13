@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <h1>Habilidad de resolución de problemas </h1>
+        </header>
+        <main>
+            <div id="inicio" class="visible">
+                <h2>Ingresa tus datos para comenzar:</h2>
+                <form id="inicio-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" required>
+                    <br><br>
+                    <button type="submit">Comenzar Evalucion</button>
+                </form>
+            </div>
+
+            <div id="encuesta" class="hidden">
+                <h2>Evaluación semana 1</h2>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>Eres una trabajadora en una de las bodegas del centro de acopio y presencias una discusión entre dos vendedores. Uno de ellos está molesto porque siente que el otro no le está ayudando lo suficiente durante los momentos más ocupados
+                            del día, mientras que el otro se defiende argumentando que está haciendo todo lo posible y que se siente injustamente criticado. ¿Cómo actuarias ante esta situación?</h4>
+                        <label><input type="radio" name="pregunta1" value="Optas por no involucrarte y sigues con tus tareas, esperando que la situación se resuelva por sí sola">Optas por no involucrarte y sigues con tus tareas, esperando que la situación se resuelva por sí sola</label>
+                        <label><input type="radio" name="pregunta1" value="Te acercas a ambos trabajadores y les muestras empatía, escuchando activamente las preocupaciones de cada uno y buscando entender sus perspectivas">Te acercas a ambos trabajadores y les muestras empatía, escuchando activamente las preocupaciones de cada uno y buscando entender sus perspectivas</label>
+                        <label><input type="radio" name="pregunta1" value="Decides hablar con tu superior para que resuelva la disputa y tome medidas disciplinarias si es necesario">Decides hablar con tu superior para que resuelva la disputa y tome medidas disciplinarias si es necesario</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación labora2:</legend>
+                        <H4>Eres una trabajadora en una bodega del centro de acopio y estás encargada de coordinar la exhibición de nuevos productos. Recientemente, has notado que uno de tus colegas, que se encarga del montaje de las vitrinas, ha estado cambiando
+                            la disposición de los productos sin consultar contigo ni con el resto del equipo. Esto ha generado cierta confusión entre el personal y ha afectado la coherencia visual de la bodega</H4>
+                        <label><input type="radio" name="pregunta2" value="Decides informar al gerente de la bodega sobre la situación para que tome medidas disciplinarias contra tu colega por no seguir los protocolos establecidos">Decides informar al gerente de la bodega sobre la situación para que tome medidas disciplinarias contra tu colega por no seguir los protocolos establecidos</label>
+                        <label><input type="radio" name="pregunta2" value="Optas por ignorar el problema y ajustarte a los cambios que tu colega ha realizado, aunque no estés de acuerdo con ellos">Optas por ignorar el problema y ajustarte a los cambios que tu colega ha realizado, aunque no estés de acuerdo con ellos</label>
+                        <label><input type="radio" name="pregunta2" value="Te acercas a tu colega de manera asertiva, expresando tu preocupación por la necesidad de coordinar los cambios en la vitrina para mantener la coherencia visual de la tienda, y propones una reunión para discutir y acordar un proceso de colaboración más efectivo">Te acercas a tu colega de manera asertiva, expresando tu preocupación por la necesidad de coordinar los cambios en la vitrina para mantener la coherencia visual de la tienda, y propones una reunión para discutir y acordar un proceso de colaboración más efectivo</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Falso o verdadero:</legend>
+                        <h4>En el centro de acopio, es importante escuchar activamente a los clientes para entender sus necesidades y ofrecerles un mejor servicio</h4>
+
+                        <label><input type="radio" name="pregunta3" value="Verdadero: Escuchar activamente a los clientes ayuda a mejorar la experiencia de compra y a satisfacer sus necesidades específicas">Verdadero: Escuchar activamente a los clientes ayuda a mejorar la experiencia de compra y a satisfacer sus necesidades específicas</label>
+                        <label><input type="radio" name="pregunta3" value="Falso: por ignorar el problema y ajustarte a los cambios que tu colega ha realizado, aunque no estés de acuerdo con ellos">Optas por ignorar el problema y ajustarte a los cambios que tu colega ha realizado, aunque no estés de acuerdo con ellos</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Falso o verdadero:</legend>
+                        <h4>La comunicación no verbal, como el lenguaje corporal y las expresiones faciales, no juega un papel importante en la interacción con los clientes en el centro de acopio</h4>
+                        <label><input type="radio" name="pregunta4" value="Falso: La comunicación no verbal es crucial en cualquier interacción, ya que puede transmitir confianza, amabilidad y profesionalismo, lo que influye en la experiencia del cliente">Falso: La comunicación no verbal es crucial en cualquier interacción, ya que puede transmitir confianza, amabilidad y profesionalismo, lo que influye en la experiencia del cliente</label>
+                        <label><input type="radio" name="pregunta4" value="Verdadero: La comunicación no verbal no es  crucial en cualquier interacción, ya que puede transmitir confianza, amabilidad y profesionalismo, lo que influye en la experiencia del cliente">Verdadero: La comunicación verbal es crucial en cualquier interacción, ya que puede transmitir confianza, amabilidad y profesionalismo, lo que influye en la experiencia del cliente</label>
+
+                    </fieldset>
+
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="hidden">
+                    <h1>Resultado</h1>
+                    <p id="resultado-texto">
+
+                    </p>
+                    <canvas id="chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/eva1.2.js"></script>
+    </body>
+
+</html>

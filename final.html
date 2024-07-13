@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>TRIVIA DE LA PLAZA</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="puntaje">
+                <img src="img/puntos.png" alt="">
+                <span class="puntos" id="puntos">0</span>
+            </div>
+            <div class="jugador">
+                <span class="nombre" id="nombre">-</span>
+                <img src="img/user.png" alt="">
+            </div>
+        </header>
+
+        <!--pantalla DE final-->
+
+        <main class="final">
+            <h2>QUIZ FINAL</h2>
+
+            <div class="medalla">
+                <img src="img/medalla.png" alt="">
+                <h3 id="nombre-jugador" class="nombre"> andres</h3>
+            </div>
+            <span class="puntaje-final" id="puntaje-final">10000 puntos</span>
+
+            <h2>ACETADAS:<span class="final-score" id="total-acertadas">20</span></h2>
+            <h2>INCORRECTA:<span class="final-score" id="total-no-acertadas">10</span></h2>
+            <button class="btn" id="btn-comenzar">comenzar de nuevo</button>
+        </main>
+    </div>
+    <script src="js/final .js"></script>
+
+</body>
+
+</html>

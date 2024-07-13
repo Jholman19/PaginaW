@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <style>
+        .option {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .option img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HABILIDADES DE COMUNICACIÓN</h1>
+    </header>
+    <main>
+        <div id="inicio" class="visible">
+            <h2>Ingresa tus datos para comenzar:</h2>
+            <form id="inicio-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+                <br><br>
+                <button type="submit">Comenzar Evaluación</button>
+            </form>
+        </div>
+
+        <div id="encuesta" class="hidden">
+            <h2>Evaluación semana 1</h2>
+            <form id="quiz-form">
+                <fieldset>
+                    <legend>Gimnasia cerebral:</legend>
+                    <h4>Durante la carga de un camión, surge un problema con la distribución del peso de los bultos de papa. Como responsable del equipo de carga, necesitas comunicar una solución eficaz.</h4>
+                    <div class="contener"></div>
+                    <video class="video" width="340" height="260" controls>
+                        <source src="img/actividad1.mp4" type="video/mp4">
+                    </video>
+                    <label><input type="radio" name="pregunta1" value="Realiza la acción sin errores"> Realiza la acción sin errores</label>
+                    <label><input type="radio" name="pregunta1" value="Realiza la acción presentando de 3 a 5 errores"> Realiza la acción presentando de 3 a 5 errores</label>
+                    <label><input type="radio" name="pregunta1" value="Realiza la acción presentando más de 5 errores"> Realiza la acción presentando más de 5 errores</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gimnasia cerebral:</legend>
+                    <h4>¿Cuántas diferencias hay?</h4>
+                    <div class="contenedor">
+                        <img class="imagen" src="img/dife1.jpeg" alt="Imagen 1">
+                        <img class="imagen" src="img/dife2.jpeg" alt="Imagen 2">
+                    </div>
+                    <label><input type="radio" name="pregunta2" value="1"> 1</label>
+                    <label><input type="radio" name="pregunta2" value="4"> 4</label>
+                    <label><input type="radio" name="pregunta2" value="3"> 3</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serie logica:</legend>
+                    <h4>Serie lógicas con figuras. Marca la opción correcta </h4>
+                    <img class="imagen" src="img/pareja.jpeg" alt="Imagen">
+                    <label class="option">
+                        <input type="radio" name="pregunta3" value="A">
+                        <img src="img/p1.jpeg" alt="Opción ">
+                        <span>A</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pregunta3" value="B">
+                        <img src="img/p2.jpeg" alt="Opción ">
+                        <span>B</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pregunta3" value="C">
+                        <img src="img/p3.jpeg" alt="Opción ">
+                        <span>C</span>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serie logica:</legend>
+                    <h4>¿Cuál es el trozo que le falta a la imagen?</h4>
+                    <img class="imagen" src="img/comple1.jpeg" alt="Imagen">
+                    <label class="option">
+                        <input type="radio" name="pregunta4" value="A">
+                        <img src="img/c1.jpeg" alt="Opción ">
+                        <span>A</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pregunta4" value="B">
+                        <img src="img/c2.jpeg" alt="Opción ">
+                        <span>B</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pregunta4" value="C">
+                        <img src="img/c3.jpeg" alt="Opción ">
+                        <span>C</span>
+                    </label>
+                </fieldset>
+
+                <button type="submit">Enviar Respuestas</button>
+            </form>
+
+            <div id="resultado" class="hidden">
+                <h2>Resultado</h2>
+                <p id="resultado-texto"></p>
+                <canvas id="chart" width="200" height="200"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/eva3.1.js"></script>
+</body>
+
+</html>

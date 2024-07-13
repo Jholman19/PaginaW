@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>Triage de habilidades: Cerrando brechas laborales</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <h1>HABILIDADES DE COMUNICACIÓN </h1>
+        </header>
+        <main>
+            <div id="inicio" class="visible">
+                <h2>Ingresa tus datos para comenzar:</h2>
+                <form id="inicio-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" required>
+                    <br><br>
+                    <button type="submit">Comenzar Evalucion</button>
+                </form>
+            </div>
+
+            <div id="encuesta" class="hidden">
+                <h2>Evaluación semana 1</h2>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4> Durante la carga de un camión, surge un problema con la distribución del peso de los bultos de papa. Como responsable del equipo de carga, necesitas comunicar una solución eficaz</h4>
+                        <label><input type="radio" name="pregunta1" value="Esto es un desastre, ¿quién hizo esto?">Esto es un desastre, ¿quién hizo esto?</label>
+                        <label><input type="radio" name="pregunta1" value="Vamos a detener la carga y reorganizar los bultos para equilibrar el peso">Vamos a detener la carga y reorganizar los bultos para equilibrar el peso</label>
+                        <label><input type="radio" name="pregunta1" value="¿Qué hacemos ahora? Esto no va a funcionar?">¿Qué hacemos ahora? Esto no va a funcionar?</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <H4> Tienes a cargo una bodega de productos de la canasta familiar en el centro de acopio. Surge un problema inesperado: algunas de las cajas han llegado dañadas y algunos productos se encuentran en mal estado, debido a un manejo descuidado
+                            durante el trasporte. ¿Cómo actuarias ante esta situación? </H4>
+                        <label><input type="radio" name="pregunta2" value="Identifiquemos las cajas dañadas y documentemos los daños. Luego, informaremos al proveedor para tomar las medidas necesarias">Identifiquemos las cajas dañadas y documentemos los daños. Luego, informaremos al proveedor para tomar las medidas necesarias </label>
+                        <label><input type="radio" name="pregunta2" value="Esto es inaceptable. ¿Cómo es posible que las cajas lleguen así"> Esto es inaceptable. ¿Cómo es posible que las cajas lleguen así</label>
+                        <label><input type="radio" name="pregunta2" value="No sé qué hacer ahora. ¿Deberíamos aceptar la entrega o rechazarla?">No sé qué hacer ahora. ¿Deberíamos aceptar la entrega o rechazarla?</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <H4>Eres el supervisor de logística del centro de acopio. Cada mañana, llegan varios camiones con productos frescos para descargar en diferentes puestos de ventas. Hoy, debido a un retraso en la llegada de los camiones, los horarios
+                            de descarga están desorganizados y varios trabajadores están confundidos sobre cuándo deben comenzar. ¿cómo manejarías esta situación</h4>
+                        <label><input type="radio" name="pregunta3" value="Esto es un caos, ¿por qué no siguen las instrucciones">Esto es un caos, ¿por qué no siguen las instrucciones</label>
+                        <label><input type="radio" name="pregunta3" value="Vamos a organizar una reunión rápida para ajustar los horarios de descarga y asegurarnos de que todos estén informados">Vamos a organizar una reunión rápida para ajustar los horarios de descarga y asegurarnos de que todos estén informados</label>
+                        <label><input type="radio" name="pregunta3" value="No estoy seguro de cómo manejar esto, tal vez deberíamos esperar a que todos los camiones lleguen antes">El No estoy seguro de cómo manejar esto, tal vez deberíamos esperar a que todos los camiones lleguen antes</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Situación laboral:</legend>
+                        <h4>EEres el administrador de un centro de acopio y presencias un altercado entre dos vendedores debido a un malentendido sobre el espacio asignado para sus puestos de ventas. Ambos están visiblemente molestos y se acusan mutuamente
+                            de invadir el espacio del otro</h4>
+                        <label><input type="radio" name="pregunta4" value="Intervenir de inmediato y tomar partido por uno de los vendedores, ignorando las explicaciones de la otra parte">Intervenir de inmediato y tomar partido por uno de los vendedores, ignorando las explicaciones de la otra parte</label>
+                        <label><input type="radio" name="pregunta4" value="Llamar a seguridad para que expulse a uno de los vendedores del lugar y termine con el conflicto de inmediato">Llamar a seguridad para que expulse a uno de los vendedores del lugar y termine con el conflicto de inmediato</label>
+                        <label><input type="radio" name="pregunta4" value="Escuchar activamente a ambos vendedores, permitiéndoles explicar su versión del conflicto y entender las razones detrás de sus reclaos"> Escuchar activamente a ambos vendedores, permitiéndoles explicar su versión del conflicto y entender las razones detrás de sus reclamos</label>
+                    </fieldset>
+
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="hidden">
+                    <h1>Resultado</h1>
+                    <p id="resultado-texto">
+
+                    </p>
+                    <canvas id="chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/eva1.1.js"></script>
+    </body>
+
+</html>

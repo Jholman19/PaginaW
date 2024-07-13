@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title>TRIVIA DE LA PLAZA</title>
+    <link rel="shortcut icon" href="img/lgo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="puntaje">
+                <img src="img/puntos.png" alt="">
+                <span class="puntos" id="puntos">0</span>
+            </div>
+            <div class="jugador">
+                <span class="nombre" id="nombre">-</span>
+                <img src="img/user.png" alt="">
+            </div>
+        </header>
+
+        <!--pantalla DE MENU-->
+
+        <main class="menu">
+            <h2>Hola <span id="nombre-jugador">-</span></h2>
+            <p>Elige una categoría..</p>
+            <div class="categorias">
+                <div class="categoria" id="general">
+                    <img src="img/general.png" alt="" class="foto-categoria">
+                    <h3>General</h3>
+                </div>
+                <div class="categoria" id="fruta">
+                    <img src="img/fruta.png" alt="" class="foto-categoria">
+                    <h3>fruta</h3>
+                </div>
+                <div class="categoria" id="matematicas">
+                    <img src="img/matematicas.png" alt="" class="foto-categoria">
+                    <h3>matematicas</h3>
+                </div>
+                <div class="categoria" id="verdad o falso">
+                    <img src="img/trivia.png" alt="" class="foto-categoria">
+                    <h3>verdad o falso </h3>
+                </div>
+                <div class="categoria" id="geografia">
+                    <img src="img/mundo.png" alt="" class="foto-categoria">
+                    <h3>geografia</h3>
+                </div>
+                <div class="categoria" id="verduras">
+                    <img src="img/verdura.png" alt="" class="foto-categoria">
+                    <h3>verduras</h3>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
